@@ -202,3 +202,13 @@ variable "availability_zones" {
   type        = list
   description = "List of availability zones for the cluster"
 }
+
+variable "managed_namespaces_zones" {
+  default = []
+  description = "List of details of delegated zones for managed namespaces"
+}
+
+variable "cluster_zone_ids" {
+  default = []
+  description = "List of DNS zone IDs associated with the cluster"
+}

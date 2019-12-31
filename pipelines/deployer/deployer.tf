@@ -183,6 +183,9 @@ module "gsp-cluster" {
 
   cls_destination_enabled = var.cls_destination_enabled
   cls_destination_arn     = var.cls_destination_arn
+
+  managed_namespaces_zones = local.external-dns-namespace-zones
+  cluster_zone_ids         = local.cluster_zone_ids
 }
 
 output "kubeconfig" {
